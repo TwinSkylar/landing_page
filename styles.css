@@ -1,0 +1,147 @@
+/*Setting commonalities for the header and footer.
+Just the background color for now*/
+
+.header,
+.footer {
+    background-color: #1F2937;
+    color: #f9faf8;
+    display: flex;
+
+}
+
+.header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top,
+.header-body {
+    display: flex;
+}
+
+.placeholder,
+.introduction {
+    width: 50%;
+}
+
+/*Disables link color change*/
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*setting all unordered list base.  Right now only one list exists*/
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.logo {
+    display: flex;
+    size: 24px;
+    align-items: center;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.placeholder {
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction-main {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.introduction-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.introduction-button {
+    background-color: #3882f6;
+    color: #e5e5e5;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    align-self: flex-start;
+
+}
+
+/** Information Section **/
+.information-title{
+    color:#1F2937;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+
+
+/**Quote Section**/
+
+.quote{
+    background-color: #e5e7eb;    
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style: italic;
+    color:#1f2937;
+}
+
+/**Recruitment Section**/
+
+.content-container{
+    display: flex;
+}
+.information{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex:1;
+}
+
+.data-list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.data-combo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fake-image{
+    height: 140px;
+    width: 140px;
+    border: 10px solid #2882f6;
+}
+.recruitment{
+    display: flex;
+    background-color: #2882f6;
+    color: #e5e5e5;
+    justify-content:space-around;
+}
+
+
+
+/** Footer Section **/
+
+.footer{
+    justify-content: center;
+}
