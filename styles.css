@@ -1,28 +1,40 @@
-/*Setting commonalities for the header and footer.
-Just the background color for now*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
 
-.header,
-.footer {
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+/*Setting commonalities for the header and footer.*/
+
+header,
+footer {
     background-color: #1F2937;
     color: #f9faf8;
     display: flex;
-
+    padding: 1rem;
 }
 
-.header {
-    padding: 1rem;
+/** Header Section **/
+header{
     display: flex;
     flex-direction: column;
+    padding: 1em 7em;
 }
 
-.header-top,
-.header-body {
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.nav{
     display: flex;
-}
-
-.placeholder,
-.introduction {
-    width: 50%;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /*Disables link color change*/
@@ -39,19 +51,22 @@ ul {
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin-left: auto;
 }
 
-.logo {
+.header-body{
     display: flex;
-    size: 24px;
+    justify-content: center;
     align-items: center;
+    gap: 2em;
+    padding:5em 0;
 }
+
+/**Begins the content section of the website **/
 
 .introduction {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .placeholder {
@@ -59,6 +74,10 @@ ul {
     background-color: grey;
     align-items: center;
     justify-content: center;
+    width:50%;
+    flex-shrink: 0;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .introduction-main {
@@ -72,14 +91,81 @@ ul {
     color: #e5e7eb;
 }
 
-.introduction-button {
+.signup-button {
     background-color: #3882f6;
     color: #e5e5e5;
     padding: 8px 16px;
     border-radius: 8px;
+    border-style: solid;
+    border-color: #1F2937;
     text-align: center;
     align-self: flex-start;
+}
+/**Recruitment Section**/
 
+.content-container{
+    display: flex;
+    justify-content: center;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em 7em;
+
+}
+
+.data-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.data-combo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+.fake-image{
+    height: 140px;
+    width: 140px;
+    border: 10px solid #2882f6;
+    border-radius: 10px;
+}
+
+/** Recruitment Ad section **/
+
+.ad{
+    display: flex;
+    justify-content: center;
+    padding: 2em 7em;
+}
+.recruitment{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 3em;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.recruitment-text{
+    font-weight: bold;
+    font-size: 24px;
+    color: #e5e5e5;
+}
+
+ .action-button{
+    align-self: center;
+    border-color: #e5e5e5;
 }
 
 /** Information Section **/
@@ -89,59 +175,28 @@ ul {
     font-size: 36px;
 }
 
-
-
 /**Quote Section**/
 
 .quote{
-    background-color: #e5e7eb;    
+    background-color: #e5e7eb;  
+    width: 100%;
 }
 
 .quote-text{
     font-size: 36px;
     font-style: italic;
     color:#1f2937;
+    padding:2em 4em;
 }
 
-/**Recruitment Section**/
-
-.content-container{
-    display: flex;
+figcaption{
+    text-align: right;
+    font-weight: bold;
 }
-.information{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex:1;
-}
-
-.data-list{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.data-combo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.fake-image{
-    height: 140px;
-    width: 140px;
-    border: 10px solid #2882f6;
-}
-.recruitment{
-    display: flex;
-    background-color: #2882f6;
-    color: #e5e5e5;
-    justify-content:space-around;
-}
-
-
 
 /** Footer Section **/
 
-.footer{
+footer{
     justify-content: center;
+    align-items: center;
 }
